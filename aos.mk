@@ -19,16 +19,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from ham device
 $(call inherit-product, device/zuk/ham/ham.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+#Atomic
+WITH_MUSICFX := true
+AOS_BUILD_TYPE := PLASMA
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
+# Inherit some common ATMOIC-OS stuff.
+$(call inherit-product, vendor/aos/config/common.mk)
+$(call inherit-product, vendor/aos/config/telephony.mk)
+$(call inherit-product, vendor/aos/config/version.mk)
 
-# AospExtended-BuildType
-EXTENDED_BUILD_TYPE := OFFICIAL
-
-PRODUCT_NAME := aosp_ham
+PRODUCT_NAME := aos_ham
 PRODUCT_DEVICE := ham
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_MODEL := ZUK Z1
