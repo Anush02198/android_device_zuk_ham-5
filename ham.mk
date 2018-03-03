@@ -114,12 +114,8 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # ConfigPanel
-PRODUCT_PACKAGES += \
-    ConfigPanel
-
-# Doze package
-PRODUCT_PACKAGES += \
-    DeviceSettings
+#PRODUCT_PACKAGES += \
+#    ConfigPanel
 
 # Fingerprint
 PRODUCT_PACKAGES += \

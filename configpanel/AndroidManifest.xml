@@ -28,7 +28,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher_settings"
-        android:label="@string/device_settings_name"
+        android:label="@string/device_settings_app_name"
         android:theme="@style/Theme.Main"
         android:defaultToDeviceProtectedStorage="true"
         android:directBootAware="true">
@@ -45,6 +45,17 @@
             </intent-filter>
         </provider>
 
+        <service android:name=".OclickService" />
+        <activity
+            android:name=".BluetoothInputSettings"
+            android:launchMode="singleTop"
+
+            android:label="@string/oclick_panel_title">
+            <intent-filter>
+                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER" />
+            </intent-filter>
+        </provider>
+
         <activity
             android:name=".ButtonSettingsActivity"
             android:label="@string/button_panel_title">
@@ -56,13 +67,12 @@
                 android:resource="@drawable/ic_settings_additional_buttons" />
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.homepage" />
+                android:value="com.android.settings.category.device" />
         </activity>
 
         <receiver android:name=".Startup" >
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="android.intent.action.PRE_BOOT_COMPLETED" />
+                <action android:name="cyanogenmod.intent.action.INITIALIZE_CM_HARDWARE" />
             </intent-filter>
         </receiver>
     </application>
