@@ -209,6 +209,7 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
+
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),eng)
     ifeq ($(WITH_DEXPREOPT),)
@@ -217,6 +218,9 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+
+# Use Snapdragon LLVM Compiler
+TARGET_USE_SDCLANG := true
 
 # SELinux policies
 # qcom sepolicy

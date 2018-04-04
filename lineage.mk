@@ -21,6 +21,9 @@ $(call inherit-product, device/zuk/ham/ham.mk)
 
 # Inherit some lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/crdroid.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/lineage/config/lineage_sdk_common.mk)
 
 PRODUCT_NAME := lineage_ham
 PRODUCT_DEVICE := ham
