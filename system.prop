@@ -46,3 +46,6 @@ dalvik.vm.image-dex2oat-threads=4
 persist.bt.enableAptXHD=true
 persist.service.btui.use_aptx=1
 persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
+
+#Sensors
+ro.qti.sensors.touch_taptap=true

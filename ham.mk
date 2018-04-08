@@ -216,6 +216,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl
 
+#VNDK
+PRODUCT_PACKAGES +=\
+	vndk-sp \
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
