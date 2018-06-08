@@ -177,17 +177,30 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc \
-    libstagefrighthw
-
+    libstagefrighthw \
+ 
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.disable_treble=true \
     persist.camera.4k2k.enable=1 \
     persist.media.treble_omx=false
 
+ 
+# Media profile
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/vendor/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/vendor/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/vendor/etc/media_codecs_google_video.xml \
+    frameworks/av/media/libstagefright/ESDS.cpp:system/vendor/etc/ESDS.cpp \
+    frameworks/av/media/libstagefright/CameraSource.cpp:system/vendor/etc/CameraSource.cpp \
+    $(LOCAL_PATH)/configs/media_codecs.xml:system/vendor/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/vendor/etc/media_codecs_performance.xml \
+    $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:system/vendor/etc/media_profiles_V1_0.xml
+
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8974
-
+    android.hardware.power@1.1-service-impl \
+    power.msm8974 \
+  
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
