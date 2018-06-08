@@ -49,3 +49,7 @@ persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
 
 #Sensors
 ro.qti.sensors.touch_taptap=true
+
+#GPS
+persist.gps.qc_nlp_in_use=1
+ro.gps.agps_provider=1
