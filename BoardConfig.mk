@@ -212,8 +212,8 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
-+#Charging info
-+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO+
+#Charging info
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO+
 
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),eng)
