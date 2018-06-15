@@ -181,6 +181,9 @@ USE_DEVICE_SPECIFIC_LOC_API 	:= true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
+# Malloc
+MALLOC_SVELTE := true
+
 # PowerHAL
 TARGET_POWERHAL_VARIANT := qcom
 
@@ -209,6 +212,8 @@ PROTOBUF_SUPPORTED := true
 # ANT+ - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this - TODO: Confirm this
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
++#Charging info
++BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO+
 
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),eng)
