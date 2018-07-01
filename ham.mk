@@ -209,9 +209,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     telephony-ext
 
-# USB
+# USB HAL
 PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
+    android.hardware.usb@1.0-service\
 
 # Data
 PRODUCT_PACKAGES += \
