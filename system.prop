@@ -14,6 +14,15 @@ persist.radio.multisim.config=dsds
 # bluetooth
 qcom.bluetooth.soc=smd
 
+# Camera
+persist.camera.HAL3.enabled=1
+
+# DRM
+drm.service.enabled=true
+
+# Google assistant
+ro.opa.eligible_device=true
+
 # Network
 persist.data.qmi.adb_logmask=0
 
@@ -46,6 +55,22 @@ dalvik.vm.image-dex2oat-threads=4
 persist.bt.enableAptXHD=true
 persist.service.btui.use_aptx=1
 persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
+
+# ADB
+ro.debuggable=1
+persist.sys.usb.config=adb
+ro.secure=0
+ro.adb.secure=0
+
+#low audio flinger standby delay to reduce power consumption
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.audio.flinger_standbytime_ms=300
+
+# Higher fling velocities to smooth scrolling
+# and provide better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.min.fling_velocity=160 \
+ro.max.fling_velocity=20000
 
 #Sensors
 ro.qti.sensors.touch_taptap=true
