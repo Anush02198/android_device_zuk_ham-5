@@ -1,3 +1,10 @@
 subdirs = [
+<<<<<<< HEAD
     "usb",
+=======
+    "camera/provider",
+    "biometrics",
+    "light",
+    "bluetooth/impl",
+>>>>>>> 5c02ed2... ham: Import modified android.hardware.bluetooth@1.0-impl
 ]
