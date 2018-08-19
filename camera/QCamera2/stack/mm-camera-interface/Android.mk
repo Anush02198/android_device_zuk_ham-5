@@ -46,5 +46,6 @@ LOCAL_MODULE := libmmcamera_interface
 LOCAL_SHARED_LIBRARIES := libdl libcutils liblog
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
+LOCAL_CLANG := true
 
 include $(BUILD_SHARED_LIBRARY)

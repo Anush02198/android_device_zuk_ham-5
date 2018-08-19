@@ -38,5 +38,6 @@ LOCAL_MODULE := libmmjpeg_interface
 LOCAL_SHARED_LIBRARIES := libdl libcutils liblog libqomx_core
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
+LOCAL_CLANG := true
 
 include $(BUILD_SHARED_LIBRARY)
