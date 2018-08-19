@@ -98,6 +98,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.1 \
+    android.hardware.radio.deprecated@1.1
+
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
