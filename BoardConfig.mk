@@ -236,8 +236,8 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 
 # SELinux policies
 # qcom sepolicy
-include device/qcom/sepolicy/sepolicy.mk
-include device/qcom/sepolicy/legacy-sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/legacy-sepolicy.mk
 
 #BOARD_SEPOLICY_DIRS += \
 #    $(DEVICE_PATH)/sepolicy
