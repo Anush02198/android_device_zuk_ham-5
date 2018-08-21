@@ -1,1 +1,1 @@
-add_lunch_combo lluvia_ham-userdebug
+add_lunch_combo potato_ham-userdebug

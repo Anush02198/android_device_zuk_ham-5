@@ -34,5 +34,4 @@
 #define BTM_DEF_LOCAL_NAME   	  "Zuk Z1"
 #define BLE_VND_INCLUDED   	  FALSE
 #define BLUETOOTH_QTI_SW  	  TRUE
-#define BT_CLEAN_TURN_ON_DISABLED TRUE
 #endif
