@@ -214,8 +214,12 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 # USB HAL
+#PRODUCT_PACKAGES += \
+#    android.hardware.usb@1.0-service.ham
+
+# USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.ham
+    android.hardware.usb@1.0-service.basic
 
 # Data
 PRODUCT_PACKAGES += \
